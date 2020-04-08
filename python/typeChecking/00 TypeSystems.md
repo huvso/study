@@ -225,8 +225,4 @@ PEP 8은 다음과 같은 구문을 추천한다
   - 
   - 
   - 
-=======
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDAzMjE5OTAsMjYwNTcxMjU4XX0=
--->
->>>>>>> aac34a8dd9bbcc0fd7d5f1fa27d73749b253333a
+
