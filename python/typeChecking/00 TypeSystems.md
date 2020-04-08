@@ -51,13 +51,10 @@
 ```
 - Type annotations and type hints
   · 타입에 대한 주석과 힌트
-
 - Adding static types to code, both your code adn the code of others
   · 모든 코드에 정적 타입 추가
-
 - Running a static type checker
   · 정적 타입 체커 실행
-
 - Enforcing types at runtime
   · 런타임에 타입 적용
 ```
@@ -181,3 +178,49 @@ Person class의 경우 fly() method를 가지고 있지 않기 때문에 Attribu
 
 이러한 duck typing의 경우 타입에 대해 매우 자유롭게 작성 할 수 있다.
 하지만 코드 실행 시 자료형 오류나 선언되지 않은 method나 attribute를 찾지 못해 오류가 발생할 수 있다. 이러한 문제들은 개발이 어느 정도 진행 된 뒤 발생 될 가능성이 크며, 해당 오류를 찾는 것이 쉽지 않다.
+
+
+
+## 2. Hello Types
+이번 장에서는 type hints를 function에 어떻게 추가 하는지 알아 볼 것이다.
+다음의 function은 첫 글자를 대문자화 해주고 장식 라인을 추가하여 텍스트 문자열을 헤드라인 형태로 바꾼다.
+
+```
+def headline(text, align=True):
+    if align:
+        return f"{text.title()}\n{'-' * len(text)}"
+    else: 
+        return f" {text.title()} ".center(50, "o")
+
+print(headline("python type checking"))
+# result: 
+# Python Type Checking
+# --------------------
+
+print(headline("python type checking", align=False))
+# oooooooooooooo Python Type Checking oooooooooooooo
+```
+
+해당 function은 기본적으로 밑줄과 왼쪽 정렬된 헤드라인을 반환한다.
+정렬 플래그를 False로 설정하면 o에 감싸져서 중앙에 위치된 헤드라인을 반환하도록 할 수 있다.
+
+
+function에 대한 타입을 추가하려면 다음과 같이 인수 및 변환 값에 annotation을 달기만 하면 된다.
+
+```
+def headline2(text: str, align: bool = True) -> str:
+    if align:
+        return f"{text.title()}\n{'-' * len(text)}"
+    else: 
+        return f" {text.title()} ".center(50, "o")
+```
+
+text: str 구문은 text 인수는 str 타입이어야 한다고 말한다.
+마찬가지로, 선택적 align 인수는 default를 True의 bool 타입을 가져야 한다.
+마지막으로, -> str 구문은 headline2()가 문자열을 반환함을 명시하고 있다.
+
+PEP 8은 다음과 같은 구문을 추천한다
+
+  - 
+  - 
+  - 
