@@ -178,6 +178,7 @@ Person class의 경우 fly() method를 가지고 있지 않기 때문에 Attribu
 
 이러한 duck typing의 경우 타입에 대해 매우 자유롭게 작성 할 수 있다.
 하지만 코드 실행 시 자료형 오류나 선언되지 않은 method나 attribute를 찾지 못해 오류가 발생할 수 있다. 이러한 문제들은 개발이 어느 정도 진행 된 뒤 발생 될 가능성이 크며, 해당 오류를 찾는 것이 쉽지 않다.
+<<<<<<< HEAD
 
 
 
@@ -224,3 +225,8 @@ PEP 8은 다음과 같은 구문을 추천한다
   - 
   - 
   - 
+=======
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2NDAzMjE5OTAsMjYwNTcxMjU4XX0=
+-->
+>>>>>>> aac34a8dd9bbcc0fd7d5f1fa27d73749b253333a
