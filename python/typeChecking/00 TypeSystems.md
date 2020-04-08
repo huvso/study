@@ -51,12 +51,10 @@
 ```
 - Type annotations and type hints
   · 타입에 대한 주석과 힌트
-
 - Adding static types to code, both your code adn the code of others
   · 모든 코드에 정적 타입 추가
 - Running a static type checker
   · 정적 타입 체커 실행
-
 - Enforcing types at runtime
   · 런타임에 타입 적용
 ```
@@ -181,5 +179,5 @@ Person class의 경우 fly() method를 가지고 있지 않기 때문에 Attribu
 이러한 duck typing의 경우 타입에 대해 매우 자유롭게 작성 할 수 있다.
 하지만 코드 실행 시 자료형 오류나 선언되지 않은 method나 attribute를 찾지 못해 오류가 발생할 수 있다. 이러한 문제들은 개발이 어느 정도 진행 된 뒤 발생 될 가능성이 크며, 해당 오류를 찾는 것이 쉽지 않다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYwNTcxMjU4XX0=
+eyJoaXN0b3J5IjpbLTE2NDAzMjE5OTAsMjYwNTcxMjU4XX0=
 -->
