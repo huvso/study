@@ -1,5 +1,5 @@
 # Python Type Checking(Guide) -- 20200408
-- Reference: https://realpython.com/python-type-checking/
+- Reference: <https://realpython.com/python-type-checking/>
 
 ## Contents
 ```
@@ -222,7 +222,22 @@ text: str 구문은 text 인수는 str 타입이어야 한다고 말한다.
 
 PEP 8은 다음과 같은 구문을 추천한다
 
-  - 
-  - 
-  - 
+  - 콜론에 대한 기본 규칙은 콜론 앞에는 빈공간을 두지 않고 뒤에는 한 공간을 둔다: text: str
+  - = 기호 양 옆에는 공백을 사용하도록 한다: align: bool = True
+  - -> 화살표 양 옆에는 공백을 사용하도록 한다: def headline2(...) -> str
 
+이와 같은 type hints를 추가하는 것은 런타임 효과가 없다. 즉, 그것들은 힌트일 뿐 스스로 시행되지 않는다. 예를 들어, align 인수에 잘못된 유형을 사용하더라도 코드는 문제나 경고 없이 계속 실행된다.
+
+```
+print(headline2("python type checking", align="left"))
+# reulst:
+# Python Type Checking
+# --------------------
+```
+
+위와 같은 종류의 오류를 잡기 위해서 static type checker를 사용할 수 있다.
+static type checker는 코드가 직접적으로 실행 되지 않아도 타입을 체크 해주는 도구이다.
+
+pycharm과 같은 IDE에서 이미 그런 타입 체커가 내장되어 있을 수 있다.
+![pycharm_type_error](https://files.realpython.com/media/pycharm_type_error.76a49b9d4ff1.png)
+![pycharm_type_error]

@@ -11,6 +11,7 @@ print(headline("python type checking"))
 # --------------------
 
 print(headline("python type checking", align=False))
+# result: 
 # oooooooooooooo Python Type Checking oooooooooooooo
 
 
@@ -20,3 +21,8 @@ def headline2(text: str, align: bool = True) -> str:
         return f"{text.title()}\n{'-' * len(text)}"
     else: 
         return f" {text.title()} ".center(50, "o")
+
+print(headline2("python type checking", align="left"))
+# reulst:
+# Python Type Checking
+# --------------------
