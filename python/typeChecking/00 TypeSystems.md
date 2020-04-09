@@ -222,7 +222,6 @@ text: str 구문은 text 인수는 str 타입이어야 한다고 말한다.
 
 PEP 8은 다음과 같은 구문을 추천한다
 
-<<<<<<< HEAD
   - 콜론에 대한 기본 규칙은 콜론 앞에는 빈공간을 두지 않고 뒤에는 한 공간을 둔다: text: str
   - = 기호 양 옆에는 공백을 사용하도록 한다: align: bool = True
   - -> 화살표 양 옆에는 공백을 사용하도록 한다: def headline2(...) -> str
@@ -239,11 +238,44 @@ print(headline2("python type checking", align="left"))
 위와 같은 종류의 오류를 잡기 위해서 static type checker를 사용할 수 있다.
 static type checker는 코드가 직접적으로 실행 되지 않아도 타입을 체크 해주는 도구이다.
 
-pycharm과 같은 IDE에서 이미 그런 타입 체커가 내장되어 있을 수 있다.
+pycharm과 같은 IDE에서는 이미 type checker가 내장되어 있을 수 있다.
 <br/>
-<img src="https://files.realpython.com/media/pycharm_type_error.76a49b9d4ff1.png" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
+<img src="https://raw.githubusercontent.com/huvso/study/master/python/typeChecking/img/pycharm_type_error.png" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
 <br/>
 
-![pycharm_type_error](https://files.realpython.com/media/pycharm_type_error.76a49b9d4ff1.png)
-![pycharm_type_error]
+타입 체킹을 위한 가장 일반적인 도구는 [**Mypy**](http://mypy-lang.org/)이다.
+이 챕터에서는 Mypy에 대한 간단한 설명만을 진행하며, 차 후에 Mypy에 대한 자세한 설명을 할 것이다.
 
+만약 당신의 시스템에 Mypy가 설치되어 있지 않다면 pip를 활용하여 설치 할 수 있다.
+```
+pip install mypy
+```
+
+2-2. mypy_test.py 파일에 다음의 코드를 입력하라.
+```
+# 2-2. mypy_test.py
+
+def headline(text: str, align: bool = True) -> str:
+    if align:
+        return f"{text.title()}\n{'-' * len(text)}"
+    else:
+        return f" {text.title()} ".center(50, "o")
+
+print(headline("python type checking"))
+print(headline("use mypy", align="center"))
+```
+이것은 앞에서 본 코드들과 본질적으로 같은 코드이다.
+
+이제 다음의 코드로 mypy를 실행해보자.
+```
+mypy '.\2-2. mypy_test.py'
+
+# result:
+2-2. mypy_test.py:10: error: Argument "align" to "headline" has incompatible type "str"; expected "bool"
+Found 1 error in 1 file (checked 1 source file)
+```
+
+type hints를 바탕으로 Mypy는 위 코드에서 10번 라인에서 잘못된 타입을 사용하고 있음을 알려준다.
+
+
+## 3. Pros and Cons
