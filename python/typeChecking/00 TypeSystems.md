@@ -222,6 +222,7 @@ text: str 구문은 text 인수는 str 타입이어야 한다고 말한다.
 
 PEP 8은 다음과 같은 구문을 추천한다
 
+<<<<<<< HEAD
   - 콜론에 대한 기본 규칙은 콜론 앞에는 빈공간을 두지 않고 뒤에는 한 공간을 둔다: text: str
   - = 기호 양 옆에는 공백을 사용하도록 한다: align: bool = True
   - -> 화살표 양 옆에는 공백을 사용하도록 한다: def headline2(...) -> str
@@ -241,3 +242,16 @@ static type checker는 코드가 직접적으로 실행 되지 않아도 타입�
 pycharm과 같은 IDE에서 이미 그런 타입 체커가 내장되어 있을 수 있다.
 ![pycharm_type_error](https://files.realpython.com/media/pycharm_type_error.76a49b9d4ff1.png)
 ![pycharm_type_error]
+=======
+  - 
+  - 
+  - 
+=======
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE2NDAzMjE5OTAsMjYwNTcxMjU4XX0=
+-->
+>>>>>>> aac34a8dd9bbcc0fd7d5f1fa27d73749b253333a
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwNjUyNDMwMTZdfQ==
+-->
+>>>>>>> e8bfc4d524aace21248c5044de65a4a8f8ef0146
