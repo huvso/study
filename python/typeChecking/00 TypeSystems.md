@@ -240,18 +240,10 @@ print(headline2("python type checking", align="left"))
 static type checker는 코드가 직접적으로 실행 되지 않아도 타입을 체크 해주는 도구이다.
 
 pycharm과 같은 IDE에서 이미 그런 타입 체커가 내장되어 있을 수 있다.
+<br/>
+<img src="https://files.realpython.com/media/pycharm_type_error.76a49b9d4ff1.png" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
+<br/>
+
 ![pycharm_type_error](https://files.realpython.com/media/pycharm_type_error.76a49b9d4ff1.png)
 ![pycharm_type_error]
-=======
-  - 
-  - 
-  - 
-=======
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDAzMjE5OTAsMjYwNTcxMjU4XX0=
--->
->>>>>>> aac34a8dd9bbcc0fd7d5f1fa27d73749b253333a
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUyNDMwMTZdfQ==
--->
->>>>>>> e8bfc4d524aace21248c5044de65a4a8f8ef0146
+
