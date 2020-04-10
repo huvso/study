@@ -1,4 +1,4 @@
-# mypy_test.py
+# 2-2. mypy_test.py
 
 def headline(text: str, align: bool = True) -> str:
     if align:
