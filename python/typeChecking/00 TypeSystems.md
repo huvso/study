@@ -278,4 +278,16 @@ Found 1 error in 1 file (checked 1 source file)
 type hints를 바탕으로 Mypy는 위 코드에서 10번 라인에서 잘못된 타입을 사용하고 있음을 알려준다.
 
 
-## 3. Pros and Cons
+## 3. Pros and Cons(장·단점)
+
+앞 섹션에서 파이썬에서 type checking이 어떻게 이루어지는지 맛을 보았다.
+또한 코드에 type을 추가하는 장정 중 하나인 type hints가 특정 오류를 파악하는데 도움이 된다는 예제를 살펴보았다.
+그 밖의 장점으로는 다음과 같다.
+
+ - **Type hints는 당신의 코드를 문서화하는데 도움이 된다.** 전통적으로 함수의 인수에 대해 예상되는 유형을 문서화하려면 docstring을 사용했을 것이다. 이것은 효과가 있지만 docstring에 대한 기준이 없기 때문에(PEP 257에도 불구하고) 그것들은 자동 점검에 쉽게 사용될 수 없다.
+
+ - **Type hints는 IDE들과 linter들의 성능을 향상시킨다.** 이것들은 당신의 코드에 대한 정적 분석을 훨씬 쉽게 만들어준다. 이는 IDE가 더 나은 코드 완성 및 유사한 기능을 제공 할 수 있게 한다. Type annotation을 통해 PyCharm은 텍스트가 문자임을 알고 이를 바탕으로 구체적인 제안을 할 수 있다.
+<br/>
+<img src="https://raw.githubusercontent.com/huvso/study/master/python/typeChecking/img/pycharm_type_error.png" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
+<br/>
+
