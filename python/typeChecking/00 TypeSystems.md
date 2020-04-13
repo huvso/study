@@ -30,7 +30,7 @@
   7-2 Duck Types and Protocols
   7-3 The Optional Type
   7-4 Example: The Object(ive) of the Game
-  7-5 Type Hints for Methods
+  7-5 Type Hint for Methods
   7-6 Classes as Types
   7-7 Returning self or cls
   7-8 Annotating *args and **kwargs
@@ -49,7 +49,7 @@
 
 ## Object
 ```
-- Type annotations and type hints
+- Type annotations and type hint
   · 타입에 대한 주석과 힌트
 - Adding static types to code, both your code adn the code of others
   · 모든 코드에 정적 타입 추가
@@ -116,10 +116,10 @@ thing = "Hello";
 예를 들어서 만약 당신이 thing = 28.1f으로 선언하면 컴파일러는 양립될 수 없는 타입 때문에 에러를 발생시킬 것이다.
 
 Python은 항상 동적으로 타이핑 된 언어로 남을 것이다.
-하지만, PEP 484는 Python 코드에서도 정적 타입 체킹을 가능하도록 하는 type hints를 소개한다.
+하지만, PEP 484는 Python 코드에서도 정적 타입 체킹을 가능하도록 하는 Type hint를 소개한다.
 
-대부분의 정적 타입 언어들에서 타입이 작동하는 방식과 달리, type hints는 스스로 Python이 타입을 강제하도록 하는 것은 아니다. 이름에서 알 수 있듯이 type hints는 단지 타입을 제안한다.
-type hints를 활용한 정적 유형 검사를 수행하는 다른 도구들을 나중에 소개하도록 하겠다.
+대부분의 정적 타입 언어들에서 타입이 작동하는 방식과 달리, Type hint는 스스로 Python이 타입을 강제하도록 하는 것은 아니다. 이름에서 알 수 있듯이 Type hint는 단지 타입을 제안한다.
+Type hint를 활용한 정적 유형 검사를 수행하는 다른 도구들을 나중에 소개하도록 하겠다.
 
 
 ### 1-3. Duck Typping(다른 설명으로 대체함)
@@ -183,7 +183,7 @@ Person class의 경우 fly() method를 가지고 있지 않기 때문에 Attribu
 
 
 ## 2. Hello Types
-이번 장에서는 type hints를 function에 어떻게 추가 하는지 알아 볼 것이다.
+이번 장에서는 Type hint를 function에 어떻게 추가 하는지 알아 볼 것이다.
 다음의 function은 첫 글자를 대문자화 해주고 장식 라인을 추가하여 텍스트 문자열을 헤드라인 형태로 바꾼다.
 
 ```
@@ -226,7 +226,7 @@ PEP 8은 다음과 같은 구문을 추천한다
   - = 기호 양 옆에는 공백을 사용하도록 한다: align: bool = True
   - -> 화살표 양 옆에는 공백을 사용하도록 한다: def headline2(...) -> str
 
-이와 같은 type hints를 추가하는 것은 런타임 효과가 없다. 즉, 그것들은 힌트일 뿐 스스로 시행되지 않는다. 예를 들어, align 인수에 잘못된 유형을 사용하더라도 코드는 문제나 경고 없이 계속 실행된다.
+이와 같은 Type hint를 추가하는 것은 런타임 효과가 없다. 즉, 그것들은 힌트일 뿐 스스로 시행되지 않는다. 예를 들어, align 인수에 잘못된 유형을 사용하더라도 코드는 문제나 경고 없이 계속 실행된다.
 
 ```
 print(headline2("python type checking", align="left"))
@@ -240,7 +240,7 @@ static type checker는 코드가 직접적으로 실행 되지 않아도 타입�
 
 pycharm과 같은 IDE에서는 이미 type checker가 내장되어 있을 수 있다.
 <br/>
-<img src="https://raw.githubusercontent.com/huvso/study/master/python/typeChecking/img/pycharm_type_error.png" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
+<img src="https://github.com/huvso/study/blob/master/python/typeChecking/img/01%20pycharm_type_error.png?raw=true" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
 <br/>
 
 타입 체킹을 위한 가장 일반적인 도구는 [**Mypy**](http://mypy-lang.org/)이다.
@@ -275,19 +275,69 @@ mypy '.\2-2. mypy_test.py'
 Found 1 error in 1 file (checked 1 source file)
 ```
 
-type hints를 바탕으로 Mypy는 위 코드에서 10번 라인에서 잘못된 타입을 사용하고 있음을 알려준다.
+Type hint를 바탕으로 Mypy는 위 코드에서 10번 라인에서 잘못된 타입을 사용하고 있음을 알려준다.
 
 
 ## 3. Pros and Cons(장·단점)
 
 앞 섹션에서 파이썬에서 type checking이 어떻게 이루어지는지 맛을 보았다.
-또한 코드에 type을 추가하는 장정 중 하나인 type hints가 특정 오류를 파악하는데 도움이 된다는 예제를 살펴보았다.
+또한 코드에 type을 추가하는 장정 중 하나인 Type hint가 특정 오류를 파악하는데 도움이 된다는 예제를 살펴보았다.
 그 밖의 장점으로는 다음과 같다.
 
- - **Type hints는 당신의 코드를 문서화하는데 도움이 된다.** 전통적으로 함수의 인수에 대해 예상되는 유형을 문서화하려면 docstring을 사용했을 것이다. 이것은 효과가 있지만 docstring에 대한 기준이 없기 때문에(PEP 257에도 불구하고) 그것들은 자동 점검에 쉽게 사용될 수 없다.
+ - **Type hint는 당신의 코드를 문서화하는데 도움이 된다.** 
+ 전통적으로 함수의 인수에 대해 예상되는 유형을 문서화하려면 docstring을 사용했을 것이다. 이것은 효과가 있지만 docstring에 대한 기준이 없기 때문에(PEP 257에도 불구하고) 그것들은 자동 점검에 쉽게 사용될 수 없다.
 
- - **Type hints는 IDE들과 linter들의 성능을 향상시킨다.** 이것들은 당신의 코드에 대한 정적 분석을 훨씬 쉽게 만들어준다. 이는 IDE가 더 나은 코드 완성 및 유사한 기능을 제공 할 수 있게 한다. Type annotation을 통해 PyCharm은 텍스트가 문자임을 알고 이를 바탕으로 구체적인 제안을 할 수 있다.
+ - **Type hint는 IDE들과 linter들의 성능을 향상시킨다.** 
+ 이것들은 당신의 코드에 대한 정적 분석을 훨씬 쉽게 만들어준다. 
+ 이는 IDE가 더 나은 코드 완성 및 유사한 기능을 제공 할 수 있게 한다. Type annotation을 통해 PyCharm은 텍스트가 문자임을 알고 이를 바탕으로 구체적인 제안을 할 수 있다.
 <br/>
-<img src="https://raw.githubusercontent.com/huvso/study/master/python/typeChecking/img/pycharm_type_error.png" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
+<img src="https://github.com/huvso/study/blob/master/python/typeChecking/img/02%20pycharm_code_completion.png?raw=true" width="450px" height="180px" title="pycharm_type_error" alt="pycharm_type_error_img"></img>
 <br/>
 
+ - **Type hint는 보다 명확한 아키텍처를 구축하고 유지 관리하는데 도움이 된다.**
+ Type hint를 사용하는 행위는 당신의 프로그램의 Type에 대해 생각하도록 강요한다. Python의 역동적인 특성이 큰 자산 중 하나이지만, Duck Typing이나 Overload method들, 또는 복수 Return type에 대해 의식하는 것은 좋은 일이다.
+
+물론 정적 Type checking이 다 좋은 것은 아니다. 개발자가 고려해야 할 단점 또한 있다.
+
+ - **Type hint는 개발자의 시간과 노력이 더해져야 한다.**
+ 비록 그것이 디버깅하는데 더 적은 시간을 소비할 수 있게 하더라도, 그것은 좀 더 많은 코드를 입력하기 위해 더 많은 시간을 할애 할 것이다.
+
+ - **Type hint는 Modern Python에 적합하다.**
+ Annotation은 Python 3.0에서 소개 되었으며, Python 2.7에서는 Type comment를 사용할 수 없다. 그러나 'Variable annotation'과 'Postponed evaluation of type hint'와 같은 개선은 당신이 Python 3.6 또는 3.7을 사용하여 Type cheking을 좀 더 잘 할 수 있다는 것을 의미한다.
+
+ - **Type hint는 시동 시 약간의 패널티가 있다.**
+ Typing Module을 사용해야 하는 경우 특히 짧은 스크립트에서 import 시간이 상당히 걸릴 수 있다.
+
+ // TODO -  Measureing Import Time
+
+그래서 당신은 당신의 코드에 있는 정적 타입 체크를 사용해야 하는가?
+다행히도 Python은 gradual typing의 개념을 제공한다.
+이것은 당신이 점진적으로 당신의 코드에 Type을 도입할 수 있다는 것을 의미한다.
+Type hint가 없는 코드는 static type checker에 의해 무시된다.
+따라서, 중요한 구성 요소에 Type을 추가하기 시작하고 해당 구성 요소가 가치가 있다면 Type 추가를 계속 진행 할 수 있다.
+
+위의 장·단점을 살펴보면 Type을 추가하는 것은 실행 중인 프로그램이나 프로그램 사용자에게 아무런 영향을 미치지 않는다는 것을 알 수 있다.
+Type checking은 개발자로서의 삶을 더 낫고 편리하게 만들기 위한 것이다.
+
+프로젝트에 Type을 추가할 지 여부에 대한 몇 가지 규칙은 다음과 같다.
+ 
+ - Python을 배우기 시작한 지 얼마 안 된 사람이라면 더 많은 경험이 있을 때까지 Type hint의 사용을 자제하라.
+
+ - Type hint는 짤은 일회용 스크립트에서는 거의 사용되지 않는다.
+
+ - 다른 사람이 사용할 라이브러리, 특히 PyPy에 게시된 라이브러리에서 Type hint는 많은 가치를 추가한다. 당신의 라이브러리들을 사용하는 다른 코드들은 적절하게 Type을 체크하기 위해서 이러한 Type hint들을 필요로 한다. Type hint를 사용하는 프로젝트로 
+ [cursive_re](https://github.com/Bogdanp/cursive_re/blob/master/cursive_re/exprs.py, "cursive_re link"), 
+ [black](https://github.com/psf/black/blob/master/black.py, "black link"), 
+ [Real Python Reader](https://github.com/realpython/reader/blob/master/reader/feed.py, "reader link"), 
+ [Mypy](https://github.com/python/mypy/blob/master/mypy/build.py, "mypy link")
+ 가 있다
+
+ - 더 큰 프로젝트에서 Type hint를 입력하면 코드가 어떻게 흐르는지 이해하는 데 도움이 되며 매우 권장된다.
+ 당신이 다른 사람들과 협력하는 프로젝트에서는 더욱 사용이 권장된다.
+
+ Bernát Gábor의 "[The State of Type Hints in Python](https://www.bernat.tech/the-state-of-type-hints-in-python/, "article link")" 글에서 "**Type hint는 unit test에서 작성될 만한 가치가 있을 때마다 사용해야한다.**"고 권고하였다.
+
+ 
+ 
+ 
+ 
