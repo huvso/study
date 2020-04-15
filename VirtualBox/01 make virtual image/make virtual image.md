@@ -2,16 +2,19 @@
 
 ## 새 머신 생성하기
 ### 1. 머신 생성 마법사 실행
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/01_marked.png?raw=true" title="make vimg 01" alt="make vimg 01"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/01_marked.png?raw=true" align="center" title="make vimg 01" alt="make vimg 01"></img>
 ```
-1 처음 나오는 화면에서 새로 만들기(N) 클릭
+1. 처음 나오는 화면에서 새로 만들기(N) 클릭
 ```
 
+```
+! 첫 화면과 다른 화면이 보인다면 다음과 같이 첫 화면으로 이동 할 수 있음
+```
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/01_01_marked.png?raw=true" align="center" title="make vimg 01_01" alt="make vimg 01_01"></img>
+******************
 
 ### 2. 이름 및 운영 체제 정의
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/02_marked.png?raw=true" title="make vimg 02" alt="make vimg 02"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/02_marked.png?raw=true" align="center" title="make vimg 02" alt="make vimg 02"></img>
 
 ```
 1. 각 내용에 지정하고자 하는 내용을 입력함
@@ -22,11 +25,10 @@
 
 2. 다음(N) 클릭
 ```
-
+******************
 
 ### 3. 메모리 크기 정의
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/03_marked.png?raw=true" title="make vimg 03" alt="make vimg 03"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/03_marked.png?raw=true" align="center" title="make vimg 03" alt="make vimg 03"></img>
 
 ```
 1. 생성 하고자 하는 메모리 크기를 정의
@@ -34,11 +36,10 @@
 
 2. 다음(N) 클릭
 ```
-
+******************
 
 ### 4. 하드 디스크 정의
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/04_marked.png?raw=true" title="make vimg 04" alt="make vimg 04"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/04_marked.png?raw=true" align="center" title="make vimg 04" alt="make vimg 04"></img>
 
 ```
 1. 지금 새 가상 하드 디스크 만들기(C) 라디오버튼 선택
@@ -48,11 +49,10 @@
 
 2. 만들기(N) 클릭
 ```
-
+******************
 
 ### 5. 하드 디스크 파일 종류 정의
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/05_marked.png?raw=true" title="make vimg 05" alt="make vimg 05"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/05_marked.png?raw=true" align="center" title="make vimg 05" alt="make vimg 05"></img>
 
 ```
 1. VDI(VirtualBox Disk Image) 라디오버튼 선택
@@ -62,11 +62,10 @@
 
 2. 다음(N) 클릭
 ```
-
+******************
 
 ### 6. 파일 위치 및 크기 종류 정의
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/06_marked.png?raw=true" title="make vimg 06" alt="make vimg 06"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/06_marked.png?raw=true" align="center" title="make vimg 06" alt="make vimg 06"></img>
 
 ```
 1. 파일 위치는 default로 정의하는 것이 좋음
@@ -74,20 +73,17 @@
   - 슬라이더 또는 박스에 숫자로 기입 할 수 있음
 2. 만들기 클릭
 ```
-
-
+******************
 
 ### 7. 가상 하드 디스크 만들기 Process 창
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/07.png?raw=true" title="make vimg 07" alt="make vimg 07"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/07.png?raw=true" align="center" title="make vimg 07" alt="make vimg 07"></img>
 ```
 1. 가상 하드 디스크 구성 중인 화면으로 가상 하드 디스크의 크기에 따라 생성 시간에 차이가 있음
 ```
-
+******************
 
 ### 8. 새 가상 머신 만들기 완료
-<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/08_marked.png?raw=true" title="make vimg 08" alt="make vimg 08"></img>
-<br/>
+<img src="https://github.com/huvso/study/blob/master/VirtualBox/01%20make%20virtual%20image/img/08_marked.png?raw=true" align="center" title="make vimg 08" alt="make vimg 08"></img>
 ```
 좌측 신규 가상 머신이 제대로 생성 되었는지 확인
 ```
