@@ -26,15 +26,14 @@
   
 ## 투명 프록시(Transparent Proxy)
 ### Definition
- - 투명 프록시는 사용자와 컨텐츠 프로 바이더 사이에 존재하는 중개 시스템임
+ - 투명 프록시는 사용자와 컨텐츠 프로바이더 사이에 존재하는 중개 시스템임
  - 사용자가 웹 서버에 요청을 하면 투명 프록시는 캐싱, 리디렉션 및 인증을 포함한 요청을 가로챔
-![enter image description here](https://www.maxcdn.com/one/assets/post-images/transparent-proxy.png)
+ <img src="https://github.com/huvso/study/blob/master/proxy%20Server/img/01.png?raw=true" align="center" title="proxy 01" alt="proxy 01"></img>
 
 ### Overview
- - 웹 프록시는 요청을 가로 채고, 필요한 경우 요청을 수정 한 다음 요청을 처리하거나 목적지로 저달함으로써 작동함
+ - 웹 프록시는 요청을 가로 채고, 필요한 경우 요청을 수정 한 다음 요청을 처리하거나 목적지로 전달함으로써 작동함
  - 서비스 공급자는 프록시를 사용하여 사용자가 서비스에 연결하는 방식을 형성하고 최적화 할 수 있음
  - 네트워크 공급자가 사용자 또는 직원이 외부 리소스에 액세스하는 방식에 영향을 줄 수 있음
-
  - 일반적으로 프록시는 사용자의 응용 프로그램 또는 네트워크 설정을 구성하여 액세스함
  - 투명 프록시를 사용하면 프록시는 대상으로 향하는 패킷을 가로 채서 요청을 가로 챌 수 있으므로 요청이 대상 자체에서 처리되는 것처럼 보임
  - 서비스 제공 업체는 사용자 컴퓨터를 재구성하지 않고도 프록시를 구현할 수 있음
@@ -105,7 +104,3 @@
  - https://www.tecmint.com/install-squid-in-ubuntu/
  - https://www.maxcdn.com/one/visual-glossary/transparent-proxy/
  - https://www.clien.net/service/board/lecture/11500797
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDgxNzI4MThdfQ==
--->
