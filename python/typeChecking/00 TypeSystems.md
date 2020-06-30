@@ -336,6 +336,14 @@ Type checking은 개발자로서의 삶을 더 낫고 편리하게 만들기 위
  당신이 다른 사람들과 협력하는 프로젝트에서는 더욱 사용이 권장된다.
 
  Bernát Gábor의 "[The State of Type Hints in Python](https://www.bernat.tech/the-state-of-type-hints-in-python/, "article link")" 글에서 "**Type hint는 unit test에서 작성될 만한 가치가 있을 때마다 사용해야한다.**"고 권고하였다.
+ 실제로 Type hint는 코드에서 테스트와 유사한 역할을 한고, 테스트는 개발자가 더 나은 코드를 작성하는데 도움을 준다.
+
+ 이제 Python에서 Type checking이 어떻게 작동하는지, 그리고 자신의 프로젝트에서 채택하고 싶은 것인지에 대해 생각해보자.
+
+ 이 가이드의 나머지 부분에서는 정적 타입 체커를 실행하는 방법(특히 MyPy에 관하여), Type hint 없는 라이브러리를 사용한 코드에서 Type을 체크하는 방법, 그리고 runtime 시 annotation 사용 방법 에 대해 자세히 다룰 것이다.
+
+
+# Annotations
 
  
  

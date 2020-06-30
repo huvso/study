@@ -151,6 +151,7 @@
 |keepalived|High availability VRRP/BFD and load-balancing for Linux|
 |prometheus|The Prometheus monitoring system and time series database|
 |juju|Simple, secure and stable devops. Juju keeps complexity low and productivity high. Manage applications wherever they are run.|
+
 ******************
 
 <img src="https://github.com/huvso/study/blob/master/VirtualBox/02%20install%20ubuntu/img/21.png?raw=true" align="center" title="install ubuntu 21" alt="install ubuntu 21"></img>

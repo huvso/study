@@ -29,6 +29,3 @@
 6. BRIN(Block Range INdex)
 	- 사이즈가 제한된 큰 데이터 사용 시 최적
 	- 참조: https://www.postgresql.org/docs/9.6/static/brin.html
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQyMDU1M119
--->
