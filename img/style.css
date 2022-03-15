@@ -102,3 +102,5 @@ main section .list ul li .list-badge {font-size:10px; background: #999; color: #
     main section .list ul li span.list-prise-rental {font-size: 1.1em;}
 
 }
+
+ul .inirt-ui > li {list-style: none; display:inline-block;}
