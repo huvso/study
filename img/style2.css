@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* =====================================
+                RESET
+===================================== */
+ * {outline:0 !important;}
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption,select {margin:0;padding:0; font-family: 's-core-dream',sans-serif; line-height: 120%; font-weight: 300; word-break: keep-all;border: 0;}
+html, body{width:100%;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:280px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body,input,select,textarea,button {border:none; -webkit-border-radius: 0;
+-webkit-appearance: none;
+-moz-appearance: none; 
+appearance: none;}
+ul,ol,li{list-style:none;}
+table{width:100%;border-spacing:0;border-collapse:collapse;}
+img,fieldset{border:0;}
+address,cite,code,em{font-style:normal;font-weight:normal;}
+label,img,input,select,textarea,button{vertical-align:middle; background: transparent; font-size: 12px;}
+main,header,section,nav,footer,aside,article,figure{display:block;}
+a{color:#1d1d1d;text-decoration:none;}
+button{cursor: pointer; background:none;}
+i{font-style: normal}
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input type number 에서 화살표 제거 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+/* Select box 스타일 초기화 */ 
+select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */ 
+select::-ms-expand { display: none; }
+.clearfix:after {content: ''; display: block; clear: both;}
+
+
+
+/* =====================================
+                Common
+===================================== */
+
+.wrap {width: 100%;}
+
+
+
+/* =====================================v
+                Main
+===================================== */
+
+main {max-width: 1280px; margin: auto; }
+main h2 {font-size: 24px; font-family: Arial, Helvetica, sans-serif; font-weight:900; padding-top: 60px;; padding-bottom: 20px; text-align: center; margin:0 auto;} 
+main h2 + div {width: 40px; height: 4px; background-color: #000; margin: 0 auto;} 
+main section .list ul{ box-sizing: border-box;}
+main section .list ul li {margin:80px 20px ; box-sizing: border-box; display: inline-block; width: 21%; vertical-align: top; text-align:left;}
+main section .list ul li .list-img img{width: 100%; padding: 10px; box-sizing: border-box;}
+main section .list ul li span{display: block;padding: 2px 0; line-height: 1.2em;}
+main section .list ul li span.list-subtit { font-family: Arial, Helvetica, sans-serif;  font-weight: 900; font-size: 14px;}
+main section .list ul li span.list-tit {font-size: 14px;}
+main section .list ul li span.list-prise-rental {font-size: 1.3em; padding-top: 20px; font-weight: 900;}
+main section .list ul li span.list-prise-total {font-size: 14px; color: #999; }
+main section .list ul li span.list-prise-total i {text-decoration: line-through;}
+main section .list ul li .list-badge {font-size:10px; background: #999; color: #fff; padding: 3px 5px; margin-top: 10px; display: inline-block;}
+
+
+
+
+
+
+/* =====================================v
+                Tablet
+===================================== */
+@media all and (min-width : 481px) and (max-width : 1279px){
+
+    main section .list ul {text-align: center;}
+    main section .list ul li {margin:40px; width: 30%;}
+    main section .list ul li .list-img img{padding: 0 0 10px;}
+    main section .list ul li span.list-prise-rental {font-size: 1.1em;}
+    
+}
+
+
+@media all and (max-width : 480px){
+
+    main section .list ul li {margin-bottom:20px; width: 100%; padding: 20px; text-align: center; margin: auto;}
+    main section .list ul li .list-img img{padding: 0}
+    main section .list ul li span.list-prise-rental {font-size: 1.1em;}
+
+}
+
+ul .inirt-ul > li {list-style: none; display:inline-block !important;}
